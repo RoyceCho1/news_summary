@@ -1,10 +1,10 @@
 from abc import ABCMeta, abstractmethod
-
 from langchain_community.llms.huggingface_endpoint import HuggingFaceEndpoint
 from langchain_core.language_models.llms import LLM
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from pydantic_core import Url
+
 
 
 class BaseLLMModel(BaseModel, metaclass=ABCMeta):

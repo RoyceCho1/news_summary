@@ -20,7 +20,7 @@ spec:
       containers:
         - name: server
           # TODO(user): change to your image
-          image: quay.io/ulagbulag/mobilex-exp-backend:v0.7
+          image: docker.io/roycecho1121/news_backend:v0.1
           env:
             - name: BASE_URL
               value: /api/v1
@@ -61,11 +61,11 @@ spec:
       protocol: TCP
       port: 8000
       targetPort: 8000
-# ---
-# apiVersion: v1
-# kind: Secret
-# metadata:
-#   name: openai
-# stringData:
-#   # TODO(user): change your own token!
-#   OPENAI_API_KEY: "TODO"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: openai
+stringData:
+  # TODO(user): change your own token!
+  OPENAI_API_KEY: "sk-proj-rhCnQ94B4HddL9MysmmiT3BlbkFJobTOfeZcsinCMmekXObM"
